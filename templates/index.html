@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}hello. rdio player{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+        <form id="searchForm" name="musicSearch" role="form">
+            <div class="input-group input-group-lg">
+                <input id="phrase" type="text" class="form-control" placeholder="Search music" required />
+                <input type="hidden" id="lazy" name="lazy" value="0" />
+
+                <div class="input-group-btn">
+                <button type="button" class="btn btn-primary" id="search">Search</button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+{% endblock %}

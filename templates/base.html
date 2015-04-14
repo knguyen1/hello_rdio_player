@@ -1,0 +1,68 @@
+{% extends 'bootstrap.html' %}
+
+{% load url from future %}
+
+{% load bootstrap3 %}
+
+{% block bootstrap3_content %}
+
+    <div class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">{% block title %}(no title){% endblock %}</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://getstrike.net/api/">API</a>
+                    </li>
+                    <li>
+                        <a href="https://getstrike.net/torrents/plugins/">Plugins</a>
+                    </li>
+                    <li>
+                        <a href="https://getstrike.net/torrents/help/">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="https://getstrike.net/torrents/help/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://getstrike.net/torrents/donate/">Donate</a></li>
+                    <li>
+                        <a href="http://blog.getstrike.net/">Blog</a></li>
+                    <li>
+                        <a href="https://getstrike.net/torrents/live/">Live Search</a></li>
+                    <li>
+                        <a href="https://getstrike.net/torrents/help/#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+{#        <h1>{% block title %}(no title){% endblock %}</h1>#}
+{##}
+{#        <p>#}
+{#            <a href="{% url 'home' %}">home</a>#}
+{#            <a href="{% url 'formset_default' %}">formset</a>#}
+{#            <a href="{% url 'form_default' %}">form</a>#}
+{#            <a href="{% url 'form_by_field' %}">form_by_field</a>#}
+{#            <a href="{% url 'form_horizontal' %}">form_horizontal</a>#}
+{#            <a href="{% url 'form_inline' %}">form_inline</a>#}
+{#            <a href="{% url 'form_with_files' %}">form_with_files</a>#}
+{#            <a href="{% url 'pagination' %}">pagination</a>#}
+{#            <a href="{% url 'misc' %}">miscellaneous</a>#}
+{#        </p>#}
+
+{#        {% bootstrap_messages %}#}
+
+    </div>
+
+    {% block content %}(no content){% endblock %}
+
+{% endblock %}
